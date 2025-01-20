@@ -13,7 +13,7 @@ const Banner = () => {
       initial={{ transform: "translateY(400px)" }}
       animate={{ transform: "translateY(0px)" }}
       transition={{ duration: 1 }}
-      className="w-full flex justify-center py-2 md:py-8 group"
+      className="w-full flex h-screen justify-center py-2 md:py-10 group"
     >
 
       <motion.main

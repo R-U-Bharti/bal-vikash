@@ -16,7 +16,7 @@ const App = () => {
   ]
 
   return (
-    <>
+    <div>
       <Routes>
         <Route element={<NavPage />}>
           {
@@ -24,7 +24,7 @@ const App = () => {
           }
         </Route>
       </Routes>
-    </>
+    </div>
   )
 }
 

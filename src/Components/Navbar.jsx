@@ -58,7 +58,7 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-center'>
-            <nav className={`${isVisible ? 'w-full relative animate__animated animate__fadeIn' : 'fixed top-0 w-full md:w-[70%] md:rounded-br-md md:rounded-bl-md animate__animated animate__slideInDown shadow-md md:border-l md:border-r'} z-50 dark:bg-muted/30 bg-white/30 backdrop-blur-lg border-b px-4 2xl:px-10 md:px-8 py-2 md:py-4 flex justify-between items-center `} onMouseLeave={() => setToggleMenu('')}>
+            <nav className={`${isVisible ? 'w-full relative animate__animated animate__fadeIn' : 'fixed top-0 w-full md:w-[70%] md:rounded-br-md md:rounded-bl-md animate__animated animate__slideInDown shadow-md md:border-l md:border-r border-muted/20'} z-50 dark:bg-muted/30 bg-white/30 backdrop-blur-lg border-b px-4 2xl:px-10 md:px-8 py-2 md:py-4 flex justify-between items-center `} onMouseLeave={() => setToggleMenu('')}>
 
                 {/* Logo */}
                 <div className='flex items-center gap-2' onClick={() => navigate('/')}>

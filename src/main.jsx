@@ -11,7 +11,7 @@ const CompLoader = lazy(() => import('./components/CompLoader'));
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ErrorBoundary errorMsg="Something went wrong!">
-      <BrowserRouter basename='/bal-vikash'>
+      <BrowserRouter basename='bal-vikash'>
         <Suspense fallback={<CompLoader />}>
           <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
             <Background>

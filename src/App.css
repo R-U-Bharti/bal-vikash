@@ -190,6 +190,7 @@ input[type='range']::-moz-range-thumb {
         --c2: #3B6790;
         --c3: #23486A;
         --c4: #4C7B8B;
+        --c5: #0850ad
     }
 
     .dark {
@@ -221,6 +222,7 @@ input[type='range']::-moz-range-thumb {
         --c2: #3B6790b1;
         --c3: #23486Ab1;
         --c4: #4C7B8Bb1;
+        --c5: #0850ad
     }
 }
 

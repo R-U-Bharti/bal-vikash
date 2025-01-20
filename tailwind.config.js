@@ -14,6 +14,7 @@ module.exports = {
 				cii: 'var(--c2)',
 				ciii: 'var(--c3)',
 				civ: 'var(--c4)',
+				cv: 'var(--c5)',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {
