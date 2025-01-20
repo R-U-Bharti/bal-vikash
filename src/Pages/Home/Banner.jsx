@@ -1,6 +1,13 @@
 const Banner = () => {
   return (
-    <div>Banner</div>
+    <>
+    <div className="h-screen"/>
+    <div className="h-screen"/>
+    <div className="h-screen"/>
+    <div className="h-screen"/>
+    <div className="h-screen"/>
+    <div className="h-screen"/>
+    </>
   )
 }
 
