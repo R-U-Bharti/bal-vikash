@@ -8,17 +8,12 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background-color: rgb(28, 28, 28);
-    color: whitesmoke;
-} */
-
 ::-webkit-scrollbar-track {
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(146, 146, 146, 0.3);
+    background: linear-gradient(#121e4f6c, #20358834);
     border: 3px solid transparent;
     border-radius: 9px;
     background-clip: content-box;
