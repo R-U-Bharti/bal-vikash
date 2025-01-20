@@ -2,6 +2,7 @@ import { lazy } from 'react';
 import './App.css'
 import 'animate.css'
 import { Route, Routes } from "react-router-dom"
+import NotFound from './Components/NotFound';
 const Home = lazy(() => import("./Pages/Home/Home"));
 const NavPage = lazy(() => import("./components/NavPage"));
 
@@ -23,6 +24,7 @@ const App = () => {
             routes.map(route => <Route path={route.path} element={route.element} key={route.path} />)
           }
         </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   )

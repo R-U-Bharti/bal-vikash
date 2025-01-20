@@ -12,7 +12,7 @@ const Navbar = () => {
         { label: "About Us", path: '/about-us', subMenu: [] },
         { label: "Gallery", path: '/gallery', subMenu: [] },
         { label: "Career", path: '/career', subMenu: [] },
-        { label: "Contact Us", path: '/contact-us', subMenu: [] },
+        { label: "Contact Us", path: '/contact', subMenu: [] },
     ]
 
     let icons = null
