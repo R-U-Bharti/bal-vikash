@@ -7,7 +7,7 @@ export default function ModeToggle() {
 
     return (
         <>
-            <Button variant="outline" className="rounded-full" size="icon" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+            <Button variant="outline" className="rounded-full focus-visible:ring-0 focus:outline-none" size="icon" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 <Sun size={'20px'} className=" rotate-0 scale-105 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon size={'20px'} className="absolute  rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-105" />
                 <span className="sr-only">Toggle theme</span>
