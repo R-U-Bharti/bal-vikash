@@ -15,7 +15,7 @@ const Directors = () => {
 
                 <header className='w-full text-3xl font-bold text-center text-cv mb-10'>Head Members</header>
 
-                <div className="flex flex-row items-center flex-wrap gap-y-2 justify-center gap-x-8">
+                <div className="flex flex-row items-center flex-wrap gap-y-2 justify-center gap-x-8 px-2">
                     {
                         data.map((profile, index) =>
                             <>
