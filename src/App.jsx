@@ -3,7 +3,7 @@ import './App.css'
 import 'animate.css'
 import { Route, Routes } from "react-router-dom"
 const Home = lazy(() => import("./Pages/Home/Home"));
-const NavPage = lazy(() => import("./Components/NavPage"));
+const NavPage = lazy(() => import("./components/NavPage"));
 
 const App = () => {
 
