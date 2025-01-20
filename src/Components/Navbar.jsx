@@ -63,7 +63,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className='flex items-center gap-2' onClick={() => navigate('/')}>
                     <img loading="lazy" src={logo} className='md:w-[3vw] w-[9vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
-                    <span className='text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dadi</span>
+                    <span className='text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dari</span>
                 </div>
 
                 {/* Menus */}
@@ -94,7 +94,7 @@ const Navbar = () => {
 
                     </ul>
 
-                    <div className='relative w-max h-max transition-all duration-300 border-2 shadow-[0px_0px_10px_rgba(239,176,54,0.8)] hover:shadow-[0px_0px_20px_rgba(239,176,54,1)] rounded-full flex items-center justify-center hover:rotate-[360deg]'>
+                    <div className='relative w-max h-max transition-all duration-300 border-2 border-orange-500/10 hover:shadow-[0px_0px_20px_rgba(239,176,54,1)] rounded-full flex items-center justify-center hover:rotate-[360deg]'>
                         <ModeToggle />
                     </div>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                         <div className="flex justify-between items-center">
                             <div onClick={() => (navigate('/'), sideMenuCloseFun())} className='flex items-center gap-2'>
                                 <img loading="lazy" src={logo} className='md:w-[90vw] w-[20vw] bg-white dark:bg-white/90 rounded-full p-1' alt="" />
-                                <span className='text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dadi</span>
+                                <span className='text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dari</span>
                             </div>
                             <div className='w-max text-xl bg-dark p-2 rounded-full dark:text-white rotate-45 cursor-pointer hover:text-red-700/70' onClick={() => (setToggleMenu(''), setSideMenuOpen(false))}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12h14"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="16;0" /></path><path d="M12 5v14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" values="16;0" /></path></g></svg>

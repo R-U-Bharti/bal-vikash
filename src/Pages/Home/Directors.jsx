@@ -1,6 +1,7 @@
 import principal from '@/assets/vicePrinciple.jpeg'
 import vicePrinciple from '@/assets/vicePrinciple.jpeg'
-import { isMobile } from '@/Components/powerupfunctions'
+import Header from '@/Components/Header'
+import { isMobile } from '@/lib/powerupfunctions'
 import { motion } from 'motion/react'
 
 const Directors = () => {
@@ -33,7 +34,7 @@ const Directors = () => {
         <>
             <div className="w-full md:h-screen flex flex-col justify-center items-center md:pb-0 pb-10">
 
-                <header className='w-full text-2xl md:text-3xl font-bold text-center text-cv mt-10 mb-4 md:mb-10'>Head Members</header>
+                <Header title="Head Member" />
 
                 <div className="flex flex-row items-center flex-wrap gap-y-2 justify-center gap-x-8 px-2">
                     {
