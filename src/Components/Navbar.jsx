@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import ModeToggle from './ModeToggle'
+import logo from '@/assets/logo.png'
 
 const Navbar = () => {
 
@@ -61,7 +62,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className='flex items-center gap-2' onClick={() => navigate('/')}>
-                    <img loading="lazy" src={'/logo.png'} className='md:w-[3vw] w-[9vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
+                    <img loading="lazy" src={logo} className='md:w-[3vw] w-[9vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
                     <span className='text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dadi</span>
                 </div>
 
@@ -108,7 +109,7 @@ const Navbar = () => {
 
                         <div className="flex justify-between items-center">
                             <div onClick={() => (navigate('/'), sideMenuCloseFun())} className='flex items-center gap-2'>
-                                <img loading="lazy" src={'/logo.png'} className='md:w-[90vw] w-[20vw] bg-white dark:bg-white/90 rounded-full p-1' alt="" />
+                                <img loading="lazy" src={logo} className='md:w-[90vw] w-[20vw] bg-white dark:bg-white/90 rounded-full p-1' alt="" />
                                 <span className='text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dadi</span>
                             </div>
                             <div className='w-max text-xl bg-dark p-2 rounded-full dark:text-white rotate-45 cursor-pointer hover:text-red-700/70' onClick={() => (setToggleMenu(''), setSideMenuOpen(false))}>
