@@ -11,9 +11,9 @@ const Directors = () => {
 
     return (
         <>
-            <div className="w-full h-screen flex flex-col justify-center items-center">
+            <div className="w-full md:h-screen flex flex-col justify-center items-center md:pb-0 pb-10">
 
-                <header className='w-full text-3xl font-bold text-center text-cv mb-10'>Head Members</header>
+                <header className='w-full text-2xl md:text-3xl font-bold text-center text-cv mt-10 mb-4 md:mb-10'>Head Members</header>
 
                 <div className="flex flex-row items-center flex-wrap gap-y-2 justify-center gap-x-8 px-2">
                     {
@@ -23,10 +23,10 @@ const Directors = () => {
                                     initial={{ transform: index === 1 ? "translateX(400px)" : "translateX(-400px)" }}
                                     whileInView={{ transform: "translateX(0px)" }}
                                     transition={{ duration: 0.5 }}
-                                    className='md:w-[40%] grid grid-cols-12 gap-2 hover:drop-shadow-3xl w-full border rounded-md p-4 backdrop-blur-xl bg-gradient-to-b from-indigo-950/5 to-indigo-900/10 border-white/20'
+                                    className='md:w-[40%] grid grid-cols-12 gap-2 gap-y-4 hover:drop-shadow-3xl w-full border rounded-md p-4 backdrop-blur-xl bg-gradient-to-b from-indigo-950/5 to-indigo-900/10 border-white/20'
                                 >
-                                    <img src={profile.image} alt={profile.name} className='col-span-5 size-[20vw] rounded-md object-cover object-top' />
-                                    <div className="col-span-7 flex flex-col justify-center">
+                                    <img src={profile.image} alt={profile.name} className='col-span-12 md:col-span-5 md:size-[20vw] rounded-md object-cover object-top' />
+                                    <div className="col-span-12 md:col-span-7 flex flex-col justify-center">
                                         <div className='flex flex-col '>
                                             <span className='font-bold text-xl'>{profile.name}</span>
                                             <span className='font-semibold dark:text-zinc-300'>{profile.designation}</span>
