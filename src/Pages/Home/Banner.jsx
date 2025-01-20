@@ -11,9 +11,9 @@ const Banner = () => {
 
   return (
     <motion.div
-      initial={{ transform: "translateY(400px)" }}
-      animate={{ transform: "translateY(0px)" }}
-      transition={{ duration: 1 }}
+       initial={{ opacity: 0, y: 50 }} // Start invisible and below the viewport
+      animate={{ opacity: 1, y: 0 }} // Fade in and move to its final position
+      transition={{ duration: 0.8, ease: "easeOut" }} // Smooth easing
       className="w-full flex md:h-screen justify-center py-2 pt-4 md:py-10 group"
     >
 

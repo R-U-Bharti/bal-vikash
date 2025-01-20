@@ -1,5 +1,6 @@
 import principal from '@/assets/vicePrinciple.jpeg'
 import vicePrinciple from '@/assets/vicePrinciple.jpeg'
+import { isMobile } from '@/Components/powerupfunctions'
 import { motion } from 'motion/react'
 
 const Directors = () => {
@@ -8,6 +9,25 @@ const Directors = () => {
         { id: 1, image: principal, name: "Dilip Kumar Bharti", designation: "Principal", qualification: 'B.Ed', message: "" },
         { id: 2, image: vicePrinciple, name: "Dilip Kumar Bharti", designation: "Vice Principal", qualification: 'B.Ed', message: "" },
     ]
+
+    const animate = (ind) => {
+        let desktop = {
+            initial: {
+                transform: ind === 1 ? "translateX(200px)" : "translateX(-200px)"
+            },
+            whileInView: {
+                transform: "translateX(0px)"
+            }
+        }
+
+        let mobile = {
+            initial: { opacity: 0, y: 200 },
+            whileInView: { opacity: 1, y: 0 }
+        }
+
+        return isMobile() ? mobile : desktop
+
+    }
 
     return (
         <>
@@ -20,9 +40,9 @@ const Directors = () => {
                         data.map((profile, index) =>
                             <>
                                 <motion.div
-                                    initial={{ transform: index === 1 ? "translateX(400px)" : "translateX(-400px)" }}
-                                    whileInView={{ transform: "translateX(0px)" }}
-                                    transition={{ duration: 0.5 }}
+                                    initial={animate(index).initial}
+                                    whileInView={animate(index).whileInView}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} // Smooth easing
                                     className='md:w-[40%] grid grid-cols-12 gap-2 gap-y-4 hover:drop-shadow-3xl w-full border rounded-md p-4 backdrop-blur-xl bg-gradient-to-b from-indigo-950/5 to-indigo-900/10 border-white/20'
                                 >
                                     <img src={profile.image} alt={profile.name} className='col-span-12 md:col-span-5 md:size-[20vw] rounded-md object-cover object-top' />
