@@ -7,9 +7,9 @@ import Autoplay from "embla-carousel-autoplay"
 import school1 from '@/assets/school1.jpg'
 import { motion } from 'motion/react'
 import FadeInUp from "@/Components/FadeInUp"
+import { isMobile } from "@/lib/powerupfunctions"
 
 const Banner = () => {
-
   return (
     <FadeInUp
       className="w-full flex md:h-screen justify-center py-2 pt-4 md:py-10 group"
@@ -30,7 +30,7 @@ const Banner = () => {
           ]}
         >
           <CarouselContent>
-            <CarouselItem>
+            {isMobile() && <CarouselItem>
               <div className="relative select-none">
                 <img src={school1} className="object-cover w-full z-0" />
                 <div className="md:group-hover:flex hidden md:hidden hover:hidden flex-col md:px-72 gap-2 animate__animated animate__fadeIn absolute z-50 top-0 left-0 h-full w-full bg-black/50 justify-center items-center">
@@ -40,7 +40,7 @@ const Banner = () => {
                   <p className="text-justify text-white md:text-base text-xs md:px-0 px-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam at incidunt nisi delectus facere corporis alias id recusandae voluptatem accusantium quas cupiditate soluta omnis expedita corrupti vel illo quae blanditiis ea, cumque .</p>
                 </div>
               </div>
-            </CarouselItem>
+            </CarouselItem>}
             <CarouselItem>
               <div className="relative select-none">
                 <img src={school1} className="object-cover w-full z-0" />
