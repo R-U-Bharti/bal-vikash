@@ -15,7 +15,7 @@ const Welcome = () => {
         <div className='font-bold text-xl md:text-3xl dark:text-zinc-300'>Welcome To</div>
         <SplitText
           text="Bal Vikash High School, Dari"
-          className="text-3xl md:text-6xl font-bold md:px-0 px-4"
+          className="text-3xl md:text-5xl font-bold md:px-0 px-4"
           delay={30}
           animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
           animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
@@ -25,7 +25,7 @@ const Welcome = () => {
         // onLetterAnimationComplete={handleAnimationComplete}
         />
 
-        <p className='text-justify md:text-base text-xs px-4 md:px-32 dark:text-gray-200'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, optio veritatis modi deserunt sit officia ad voluptas ipsum tempore magnam! Corrupti nobis voluptatibus dolore repellendus eaque delectus totam itaque sequi perspiciatis inventore, id at esse ipsa pariatur, cupiditate laboriosam dolor non enim vero quas, eum tempore facilis fuga. Quasi, maxime?</p>
+        <p className='text-justify md:text-base text-xs px-4 md:px-36 dark:text-gray-200'>The prestigious institution, Dari's Bal Vikash High School, is known for its academic excellence, holistic development, and nurturing environment. With experienced educators, modern facilities, online classes, and distance education options, it prepares students for future success in all aspects.</p>
 
         <div className="flex items-center gap-2 mt-6">
           <button

@@ -15,7 +15,7 @@ const Footer = () => {
                         <img src={logo} className=" bg-white/60 dark:bg-white/70 rounded-full w-12 md:w-16" />
                         <h3 className="text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text">Bal Vikash High School, Dari</h3>
                     </div>
-                    <p className="text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore libero ipsa incidunt sint doloremque corporis ratione dolores veniam molestiae nostrum nobis omnis necessitatibus quis perferendis rerum, temporibus cumque illum! Dolore.</p>
+                    <p className="text-sm text-justify">The prestigious institution, Dari's Bal Vikash High School, is known for its academic excellence, holistic development, and nurturing environment. With experienced educators, modern facilities, online classes, and distance education options, it prepares students for future success in all aspects.</p>
                 </div>
 
                 {/* <div className="col-span-12 md:col-span-4 flex flex-col items-center">
