@@ -6,8 +6,8 @@ const NotFound = () => {
             <div className='h-screen w-screen flex flex-col gap-4 items-center justify-center'>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 mt-5 mb-5">
-                            <svg width="100%" height="auto" viewBox="0 0 636 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="col-sm-12 col-md-12 mt-5 mb-5 flex justify-center">
+                            <svg width="70%" height="auto" viewBox="0 0 636 324" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="OBJECTS">
                                     <g id="Group">
                                         <path id="Vector" d="M101.3 255.2C101.3 255.2 111.1 272.6 181.8 280.5C252.5 288.4 288.2 314.9 333.1 322.8C378 330.7 433.6 278.5 481.8 286.5C530 294.4 588.2 264.2 592.8 255.2H101.3Z" fill="#2F1829" />
@@ -324,7 +324,7 @@ const NotFound = () => {
                 </div>
                 <button
                     onClick={() => window.history.back()}
-                    class="dark:bg-white/20 bg-white text-center w-48 rounded-2xl h-14 relative dark:text-white/80 text-black text-xl font-semibold group"
+                    class="dark:bg-white/20 bg-white text-center w-48 rounded-2xl py-3.5 relative dark:text-white/80 text-black text-xl font-semibold group"
                     type="button"
                 >
                     <div

@@ -2,7 +2,8 @@ import { lazy } from 'react';
 import './App.css'
 import 'animate.css'
 import { Route, Routes } from "react-router-dom"
-import NotFound from './Components/NotFound';
+const NotFound = lazy(() => import('./Components/NotFound'));
+const Gallery = lazy(() => import('./Pages/Gallery'));
 const Home = lazy(() => import("./Pages/Home/Home"));
 const NavPage = lazy(() => import("./components/NavPage"));
 
@@ -11,7 +12,7 @@ const App = () => {
   const routes = [
     { path: '/', element: <Home /> },
     { path: '/about-us', element: '' },
-    { path: '/gallery', element: '' },
+    { path: '/gallery', element: <Gallery /> },
     { path: '/career', element: '' },
     { path: '/contact-us', element: '' },
   ]

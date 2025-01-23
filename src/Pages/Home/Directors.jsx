@@ -8,8 +8,12 @@ import { motion } from 'motion/react'
 const Directors = () => {
 
     const data = [
-        { id: 1, image: principal, name: "Sunil Kumar", designation: "Principal", qualification: 'B.Ed', message: "" },
-        { id: 2, image: vicePrinciple, name: "Dilip Kumar Bharti", designation: "Vice Principal", qualification: 'B.Ed', message: "" },
+        {
+            id: 1, image: principal, name: "Sunil Kumar", designation: "Principal", qualification: 'B.Ed', message: "Our school is not just a place for education but a platform to shape your children’s dreams. We are dedicated to recognizing every student’s potential and helping them reach new heights. Your trust and support are our greatest strengths. Together, we will build a bright and empowered future."
+        },
+        {
+            id: 2, image: vicePrinciple, name: "Dilip Kumar Bharti", designation: "Vice Principal", qualification: 'B.Ed', message: "As we embrace the principles of the New Education Policy (NEP), our focus is on empowering students with knowledge, skills, and values for a bright future. We aim to provide an education that encourages creativity, critical thinking, and holistic development, preparing students for real - world challenges. Your partnership and support are invaluable in creating this transformative learning experience. Together, let us build a generation of confident, innovative, and responsible individuals."
+        },
     ]
 
     const animate = (ind) => {
@@ -45,7 +49,7 @@ const Directors = () => {
                                     initial={animate(index).initial}
                                     whileInView={animate(index).whileInView}
                                     transition={{ duration: 0.8, ease: "easeOut" }} // Smooth easing
-                                    className='md:w-[40%] mb-2'
+                                    className='md:w-[45%] mb-2'
                                 >
                                     <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
                                         {/* <div className="grid md:hover:scale-105 transition-all duration-300 grid-cols-12 gap-x-4 gap-y-4 hover:shadow-[0px_0px_30px_rgba(0,0,200,0.2)] dark:hover:shadow-[0px_0px_30px_rgba(0,0,200,0.15)] w-full border rounded-md p-4 backdrop-blur-xl bg-gradient-to-b from-indigo-950/5 to-indigo-900/10 border-white/20"> */}
@@ -56,7 +60,7 @@ const Directors = () => {
                                                     <span className='font-bold text-xl'>{profile.name}</span>
                                                     <span className='font-semibold dark:text-zinc-300'>{profile.designation}</span>
                                                 </div>
-                                                <p className='text-sm text-justify dark:text-zinc-400 text-zinc-900 mt-4 italic'>&apos;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi soluta illo veritatis necessitatibus temporibus atque officia deserunt sunt nisi cupiditate consectetur incidunt accusamus, perspiciatis consequatur. Expedita repellat quaerat corporis dicta&apos;</p>
+                                                <p className='text-sm text-justify dark:text-zinc-400 text-zinc-900 mt-4 italic'>"{profile.message}"</p>
                                             </div>
                                         </div>
                                     </SpotlightCard>
