@@ -12,7 +12,7 @@ const Footer = () => {
             <FadeInUp className={"w-full grid grid-cols-12 gap-2 dark:bg-black/50 bg-white/50 backdrop:backdrop-blur-lg md:px-20 px-4 py-5 md:py-10 md:gap-x-10"}>
                 <div className="col-span-12 md:col-span-4">
                     <div className="flex items-center gap-2 mb-4">
-                        <img src={logo} className=" bg-white/60 dark:bg-white/70 rounded-full w-12 md:w-16" />
+                        <img src={logo} className=" bg-white/60 dark:bg-white/70 p-1 rounded-full w-12 md:w-16" />
                         <h3 className="text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text">Bal Vikash High School, Dari</h3>
                     </div>
                     <p className="text-sm text-justify">The prestigious institution, Dari's Bal Vikash High School, is known for its academic excellence, holistic development, and nurturing environment. With experienced educators, modern facilities, online classes, and distance education options, it prepares students for future success in all aspects.</p>
