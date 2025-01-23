@@ -6,6 +6,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import school1 from '@/assets/school1.jpg'
 import school2 from '@/assets/school2.jpg'
+import image3 from '@/assets/image3.jpg'
 import { motion, useInView } from 'motion/react'
 import FadeInUp from "@/Components/FadeInUp"
 import { useRef } from "react"
@@ -15,7 +16,7 @@ const Banner = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { threshold: 0.9 });
 
-  const images = [school1, school2]
+  const images = [school1, image3, school2]
 
   return (
     <FadeInUp
@@ -42,8 +43,8 @@ const Banner = () => {
             {
               images.map(banner =>
                 <CarouselItem>
-                  <div className="relative select-none">
-                    <img src={banner} className="object-cover w-full z-0 dark:opacity-90" />
+                  <div className="relative select-none md:h-[90vh] h-[25vh]" style={{ background: `url(${banner})`, backgroundSize: 'cover' }}>
+                    <img src={banner} className=" dark:backdrop-brightness-50 backdrop-brightness-75 backdrop-blur-sm object-contain md:h-[90vh] h-[25vh] w-full z-0 dark:opacity-90" />
                   </div>
                 </CarouselItem>
               )
