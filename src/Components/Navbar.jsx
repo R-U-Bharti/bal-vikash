@@ -25,7 +25,7 @@ const Navbar = () => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleScroll = () => {
-        if (window.scrollY > 152) {
+        if (window.scrollY > 260) {
             setIsVisible(false)
         } else {
             setIsVisible(true)
