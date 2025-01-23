@@ -62,7 +62,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className='flex items-center gap-2' onClick={() => navigate('/')}>
-                    <img loading="lazy" src={logo} className='md:w-[3vw] w-[9vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
+                    <img loading="lazy" src={logo} className='md:w-[3vw] w-[10vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
                     <span className='text-base md:text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dari</span>
                 </div>
 
