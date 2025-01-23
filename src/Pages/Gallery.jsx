@@ -9,6 +9,7 @@ import image3 from '@/assets/image3.jpg'
 import image4 from '@/assets/image4.jpg'
 import { isMobile } from "@/lib/powerupfunctions";
 import FadeInUp from "@/Components/FadeInUp";
+import PageHeader from "@/Components/PageHeader";
 
 function GalleryImage({ data, onExpand }) {
   return (
@@ -40,27 +41,30 @@ export default function Gallery() {
   }
 
   return (
-    <FadeInUp className="h-screen w-screen p-4 md:p-10 flex flex-col md:grid grid-cols-12 gap-2">
-      <motion.div className="col-span-12 md:col-span-10 rounded-xl md:h-[90vh] h-[50vh] flex justify-center items-center" style={{ background: `url(${currentImage?.image})`, backgroundSize: 'cover' }}>
-        <motion.img
-          loading="lazy"
-          key={currentImage?.id}
-          className="dark:backdrop-brightness-50 backdrop-brightness-75 backdrop-blur-sm w-full md:h-[90vh] h-[50vh] object-contain rounded-xl"
-          src={currentImage?.image}
-          alt=""
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
-        />
-      </motion.div>
-      <aside className="col-span-12 md:col-span-2 pr-2">
-        <motion.div layout className="flex flex-row md:flex-col gap-2 md:h-[90vh] h-20 overflow-y-clip overflow-auto md:overflow-x-clip">
-          {imageList?.map((elem) => (
-            <GalleryImage key={elem?.id} data={elem} onExpand={setAsPrimary} />
-          ))}
+    <>
+      <PageHeader title={"Gallery"} />
+      <FadeInUp className="md:h-screen w-screen p-4 md:p-10 flex flex-col md:grid grid-cols-12 gap-2">
+        <motion.div className="col-span-12 md:col-span-10 rounded-xl md:h-[90vh] h-[50vh] flex justify-center items-center" style={{ background: `url(${currentImage?.image})`, backgroundSize: 'cover' }}>
+          <motion.img
+            loading="lazy"
+            key={currentImage?.id}
+            className="dark:backdrop-brightness-50 backdrop-brightness-75 backdrop-blur-sm w-full md:h-[90vh] h-[50vh] object-contain rounded-xl"
+            src={currentImage?.image}
+            alt=""
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.7 }}
+          />
         </motion.div>
-      </aside>
-    </FadeInUp>
+        <aside className="col-span-12 md:col-span-2 pr-2">
+          <motion.div layout className="flex flex-row md:flex-col gap-2 md:h-[90vh] h-20 overflow-y-clip overflow-auto md:overflow-x-clip">
+            {imageList?.map((elem) => (
+              <GalleryImage key={elem?.id} data={elem} onExpand={setAsPrimary} />
+            ))}
+          </motion.div>
+        </aside>
+      </FadeInUp>
+    </>
   );
 }

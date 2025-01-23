@@ -261,7 +261,7 @@ export default function Waves({
             />
             <canvas
                 ref={canvasRef}
-                className="block w-full h-full"
+                className="block w-full h-full dark:bg-black/30 bg-black/30"
             />
         </div>
     );
