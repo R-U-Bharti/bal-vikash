@@ -1,0 +1,1 @@
+const t="/bal-vikash/assets/school1-Bq-S9GEN.jpg",e="/bal-vikash/assets/school2-DPC11BW3.jpg",o="/bal-vikash/assets/image3-C9wtWtUs.jpg",i=()=>(window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth)<=768;export{e as a,i as b,o as i,t as s};
