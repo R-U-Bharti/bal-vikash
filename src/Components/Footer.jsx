@@ -44,7 +44,7 @@ const Footer = () => {
                             </div>
                         </li>
                         <li className="text-sm flex items-center gap-2 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/4sRBWAadjMvaVRkE6", "_blank")}>
-                            <Locate size={'16px'} /> Sarna Tand, Purana Block, Dari, Jharkhand, 829109
+                            <Locate size={'20px'} /> Sarna Tand, Purana Block, Dari, Jharkhand, 829109
                         </li>
                         <li>
                             <div className='flex gap-3 text-base mt-2 md:mt-4'>
