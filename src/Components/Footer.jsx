@@ -33,22 +33,26 @@ const Footer = () => {
                 <div className="col-span-12 md:col-span-4 md:border-none border-t pt-4 md:pt-0">
                     <h3 className="text-base md:text-xl font-semibold mb-4 md:px-20">Connect</h3>
                     <ul className="list-none text-sm text-gray-900 dark:text-gray-300 flex md:px-20 flex-col gap-2">
-                        <li className="text-sm flex items-center gap-2" onClick={() => window.open("mailto:", "_blank")}>
-                            <Mail size={'16px'} /> abc@gmail.com
+                        <li className="text-sm flex items-center gap-2 cursor-pointer" onClick={() => window.open("mailto:b.v.u.v.dari@gmail.com", "_blank")}>
+                            <Mail size={'16px'} /> b.v.u.v.dari@gmail.com
                         </li>
-                        <li className="text-sm flex items-center gap-2" onClick={() => window.open("tel:+91", "_blank")}>
-                            <Phone size={'16px'} /> 1234567890
+                        <li className="text-sm flex items-center gap-2">
+                            <Phone size={'16px'} /> 
+                            <div className="flex flex-col">
+                                <span className="cursor-pointer" onClick={() => window.open('tel:+918292874764', '_blank')}>8292874764</span>
+                                <span className="cursor-pointer" onClick={() => window.open('tel:+918340236965', '_blank')}>8292874764</span>
+                            </div>
                         </li>
-                        <li className="text-sm flex items-center gap-2" onClick={() => window.open("https://maps.app.goo.gl/4sRBWAadjMvaVRkE6", "_blank")}>
-                            <Locate size={'16px'} /> Dari, India
+                        <li className="text-sm flex items-center gap-2 cursor-pointer" onClick={() => window.open("https://maps.app.goo.gl/4sRBWAadjMvaVRkE6", "_blank")}>
+                            <Locate size={'16px'} /> Sarna Tand, Purana Block, Dari, Jharkhand, 829109
                         </li>
                         <li>
                             <div className='flex gap-3 text-base mt-2 md:mt-4'>
-                                <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-blue-500  dark:hover:bg-blue-500 cursor-pointer'><FaFacebookF /></span>
-                                <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-black dark:hover:bg-black cursor-pointer'><FaXTwitter /></span>
-                                <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-pink-600  dark:hover:bg-pink-600 cursor-pointer'><AiFillInstagram /></span>
-                                <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-red-600 dark:hover:bg-red-600 cursor-pointer'><FaYoutube /></span>
-                                <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-green-500 dark:hover:bg-green-500 cursor-pointer'><IoLogoWhatsapp /></span>
+                                <span onClick={() => window.open("https://www.facebook.com/profile.php?id=61556711248297", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-blue-500  dark:hover:bg-blue-500 cursor-pointer'><FaFacebookF /></span>
+                                {/* <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-black dark:hover:bg-black cursor-pointer'><FaXTwitter /></span> */}
+                                <span onClick={() => window.open("https://www.instagram.com/bvidyalay?utm_source=qr&igsh=MXV0YndjZ2lyYjRiZQ==", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-pink-600  dark:hover:bg-pink-600 cursor-pointer'><AiFillInstagram /></span>
+                                {/* <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-red-600 dark:hover:bg-red-600 cursor-pointer'><FaYoutube /></span> */}
+                                <span onClick={() => window.open("https://wa.me//918340236965", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-green-500 dark:hover:bg-green-500 cursor-pointer'><IoLogoWhatsapp /></span>
                             </div>
                         </li>
                     </ul>
