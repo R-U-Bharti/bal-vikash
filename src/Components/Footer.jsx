@@ -15,7 +15,7 @@ const Footer = () => {
                         <img src={logo} className=" bg-white/60 dark:bg-white/70 p-1 rounded-full w-12 md:w-16" />
                         <h3 className="text-base md:text-xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text">Bal Vikash High School, Dari</h3>
                     </div>
-                    <p className="text-sm text-justify">The prestigious institution, Dari's Bal Vikash High School, is known for its academic excellence, holistic development, and nurturing environment. With experienced educators, modern facilities, online classes, and distance education options, it prepares students for future success in all aspects.</p>
+                    <p className="text-sm text-justify">Our school is a temple of learning where knowledge, values, and growth come together. It inspires excellence, nurtures potential, and shapes us into confident and responsible individuals.</p>
                 </div>
 
                 {/* <div className="col-span-12 md:col-span-4 flex flex-col items-center">
@@ -52,7 +52,7 @@ const Footer = () => {
                                 {/* <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-black dark:hover:bg-black cursor-pointer'><FaXTwitter /></span> */}
                                 <span onClick={() => window.open("https://www.instagram.com/bvidyalay?utm_source=qr&igsh=MXV0YndjZ2lyYjRiZQ==", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-pink-600  dark:hover:bg-pink-600 cursor-pointer'><AiFillInstagram /></span>
                                 {/* <span onClick={() => window.open("https://", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-red-600 dark:hover:bg-red-600 cursor-pointer'><FaYoutube /></span> */}
-                                <span onClick={() => window.open("https://wa.me//918292874764", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-green-500 dark:hover:bg-green-500 cursor-pointer'><IoLogoWhatsapp /></span>
+                                <span onClick={() => window.open("https://wa.me//917491886853", "_blank")} className='border p-2 rounded-md duration-150 dark:bg-white/10 bg-white dark:text-accent-foreground hover:text-white hover:bg-green-500 dark:hover:bg-green-500 cursor-pointer'><IoLogoWhatsapp /></span>
                             </div>
                         </li>
                     </ul>
