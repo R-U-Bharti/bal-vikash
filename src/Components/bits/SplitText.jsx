@@ -62,7 +62,7 @@ const SplitText = ({
                 <animated.span
                     key={index}
                     style={props}
-                    className="inline-block transform transition-opacity will-change-transform font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text"
+                    className="inline-block md:h-16 transform transition-opacity will-change-transform font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text"
                 >
                     {letters[index] === ' ' ? ' ' : letters[index]}
                 </animated.span>

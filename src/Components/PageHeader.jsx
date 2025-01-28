@@ -1,8 +1,16 @@
-import React from 'react'
+import { useEffect } from 'react'
 import FadeInUp from './FadeInUp'
 import Waves from './bits/Waves'
 
 const PageHeader = ({ title }) => {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, [])
+
     return (
         <FadeInUp className={'relative py-5 md:py-10 text-center text-3xl md:text-5xl font-semibold border-t border-b border-white/10'}>
             {title}

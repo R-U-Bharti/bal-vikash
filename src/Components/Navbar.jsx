@@ -61,7 +61,7 @@ const Navbar = () => {
             <nav className={`${isVisible ? 'w-full relative animate__animated animate__fadeIn' : 'fixed top-0 w-full md:w-[70%] md:rounded-br-md md:rounded-bl-md animate__animated animate__slideInDown shadow-md md:border-l md:border-r border-muted/20'} z-50 dark:bg-muted/30 bg-white/30 backdrop-blur-lg border-b px-4 2xl:px-10 md:px-8 py-2 md:py-4 flex justify-between items-center `} onMouseLeave={() => setToggleMenu('')}>
 
                 {/* Logo */}
-                <div className='flex items-center gap-2' onClick={() => navigate('/')}>
+                <div className='flex items-center gap-2 cursor-pointer' onClick={() => navigate('/')}>
                     <img loading="lazy" src={logo} className='md:w-[3vw] w-[10vw] bg-white/60 dark:bg-white/70 rounded-full p-1' alt="" />
                     <span className='text-base md:text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-500 to-ci text-transparent bg-clip-text'>Bal Vikash High School, Dari</span>
                 </div>

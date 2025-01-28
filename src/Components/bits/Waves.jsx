@@ -179,8 +179,8 @@ export default function Waves({
         function tick(t) {
             const mouse = mouseRef.current;
 
-            mouse.sx += (mouse.x - mouse.sx) * 0.1;
-            mouse.sy += (mouse.y - mouse.sy) * 0.1;
+            // mouse.sx += (mouse.x - mouse.sx) * 0.1;
+            // mouse.sy += (mouse.y - mouse.sy) * 0.1;
 
             const dx = mouse.x - mouse.lx, dy = mouse.y - mouse.ly;
             const d = Math.hypot(dx, dy);
