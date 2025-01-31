@@ -12,7 +12,7 @@ const PageHeader = ({ title }) => {
     }, [])
 
     return (
-        <FadeInUp className={'relative py-5 md:py-10 text-center text-3xl md:text-5xl font-semibold border-t border-b border-white/10'}>
+        <FadeInUp className={'relative py-5 md:py-6 text-center text-3xl md:text-5xl font-semibold border-t border-b border-white/10'}>
             {title}
             <Waves
                 lineColor="#fff"
