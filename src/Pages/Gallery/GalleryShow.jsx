@@ -2,13 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { isMobile } from "@/lib/powerupfunctions";
 import FadeInUp from "@/Components/FadeInUp";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel"
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 function GalleryImage({ data, onExpand }) {
