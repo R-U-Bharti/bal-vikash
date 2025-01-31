@@ -50,8 +50,8 @@ const GalleryShow = ({ images }) => {
     return (
         <>
             <FadeInUp className="md:h-screen w-screen p-4 md:p-10 flex flex-col md:grid grid-cols-12 gap-2 *:select-none">
-                <motion.div className="col-span-12 md:col-span-10 rounded-xl md:h-[90vh] h-[50vh] flex justify-center items-center gap-1">
-                    <motion.div onClick={() => changeImageFun('prev')} className="w-max bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigLeft size={isMobile() ?'12px' : '20px'} /></motion.div>
+                <motion.div className="col-span-12 md:col-span-10 rounded-xl md:h-[90vh] h-[50vh] flex md:flex-row flex-col md:justify-center md:items-center gap-1">
+                    <motion.div onClick={() => changeImageFun('prev')} className="md:block hidden w-max bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigLeft size={'24px'} /></motion.div>
                     <div style={{ background: `url(${currentImage[imageIndex]?.image})`, backgroundSize: 'cover', overflow: 'clip' }} className="rounded-xl md:h-[90vh] h-[50vh] w-full">
                         <motion.img
                             loading="lazy"
@@ -65,9 +65,13 @@ const GalleryShow = ({ images }) => {
                             transition={{ duration: 0.7 }}
                         />
                     </div>
-                    <motion.div onClick={() => changeImageFun('next')} className="w-max bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigRight size={isMobile() ?'12px' : '20px'} /></motion.div>
+                    <motion.div onClick={() => changeImageFun('next')} className="md:block hidden w-max bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigRight size={'24px'} /></motion.div>
                 </motion.div>
                 <aside className="col-span-12 md:col-span-2 pr-2">
+                    <div className="md:hidden flex items-center gap-2 mb-2 border2">
+                        <motion.div onClick={() => changeImageFun('prev')} className="w-full flex items-center justify-center bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigLeft size={'24px'} /></motion.div>
+                        <motion.div onClick={() => changeImageFun('next')} className="w-full flex items-center justify-center bg-muted border p-1 rounded-full cursor-pointer"><ArrowBigRight size={'24px'} /></motion.div>
+                    </div>
                     <motion.div layout className="flex flex-row md:flex-col gap-2 md:h-[90vh] h-20 overflow-y-clip overflow-auto md:overflow-x-clip">
                         {images?.map((elem) => (
                             <GalleryImage key={elem?.id} data={elem} onExpand={setAsPrimary} />
